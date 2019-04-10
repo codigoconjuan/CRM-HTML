@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRM</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <header class="barra">
+        <div class="contenedor">
+            <h1>CRM - Administrador de Clientes</h1>
+        </div>
+    </header>
+
+    <div class="grid contenedor contenido-principal">
+        <aside class="sidebar col-3">
+            <h2>Administración</h2>
+
+            <nav class="navegacion">
+                <a href="index.html" class="clientes">Clientes</a>
+                <a href="productos.html" class="productos">Productos</a>
+                <a href="pedidos.html" class="pedidos">Pedidos</a>
+            </nav>
+        </aside>
+
+        <main class="caja-contenido col-9">
+            <h2>Nuevo Producto</h2>
+
+            <form action="/productos" method="POST">
+                <legend>Llena todos los campos</legend>
+
+                <div class="campo">
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Nombre Producto" name="nombre">
+                </div>
+
+                <div class="campo">
+                    <label>Precio:</label>
+                    <input type="number" name="precio" min="0.00" step="0.01" placeholder="Precio" >
+                </div>
+            
+                <div class="campo">
+                    <label>Imagen:</label>
+                    <input type="file"  name="imagen" >
+                </div>
+
+                <div class="enviar">
+                        <input type="submit" class="btn btn-azul" value="Agregar Producto">
+                </div>
+            </form>
+
+        </main>
+    </div>
+    
+</body>
+</html>
