@@ -88,6 +88,9 @@ h2 {
 .btn-verde {
     background-color: var(--verde);
 }
+.btn:disabled {
+    opacity: .4;
+}
 .nvo-cliente {
     padding: 2rem 4rem;
     width: auto;
@@ -372,3 +375,21 @@ form .campo input[readonly] {
     flex: 1;
     padding: 1rem;
 }
+
+/** AJUSTES SWEETALERT**/
+.swal2-popup  .swal2-title {
+    font-size: 3rem!important;
+}
+.swal2-popup #swal2-content {
+    font-size: 2rem;
+}
+.swal2-confirm,
+.swal2-cancel {
+    font-size: 2rem!important;
+    padding: 1rem 3rem;
+}
+.swal2-popup.swal2-modal{
+    padding: 4rem;
+    width: 60rem;
+}
+
