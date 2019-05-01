@@ -48,6 +48,11 @@ h2 {
 }
 
 /** BOTONES **/
+.btn-block {
+    display: block!important;
+    flex: 1 0  100%!important;
+    width: 100%!important;
+}
 .btn {
     padding:  1.5rem;
     text-align: center;
@@ -400,7 +405,7 @@ form .campo input[readonly] {
     background-color: var(--grisClaro);
     padding: 1rem 4rem;
 }
-h3.resumen {
+h3.resumen-titulo {
     font-size: 2.4rem;
     text-align: center;
     color: var(--azul);
@@ -410,6 +415,7 @@ h3.resumen {
     font-weight: 700;
     text-align: right;
     padding: 2rem;
+    text-align: center;
 }
 .total span {
     color: var(--azul);
