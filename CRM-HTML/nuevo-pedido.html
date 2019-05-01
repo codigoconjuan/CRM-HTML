@@ -32,13 +32,14 @@
         <main class="caja-contenido col-9">
             <h2>Nuevo Pedido</h2>
 
-            <form action="/productos" method="POST">
-                <legend>Llena todos los campos</legend>
+            <div class="ficha-cliente">
+                <h3>Datos de Cliente</h3>
+                <p>Juan De la torre</p>
+            </div>
+            
 
-                <div class="campo">
-                    <label>Cliente:</label>
-                    <input type="text" placeholder="Nombre Cliente" name="cliente">
-                </div>
+            <form action="/productos" method="POST">
+                <legend>Busca un Producto y agrega una cantidad</legend>
 
                 <div class="campo">
                     <label>Productos:</label>
@@ -106,7 +107,6 @@
                     <input type="submit" class="btn btn-azul" value="Agregar Pedido">
                 </div>
             </form>
-
         </main>
     </div>
     

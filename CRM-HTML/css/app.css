@@ -96,7 +96,7 @@ h2 {
     width: auto;
 }
 .btn-eliminar {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif; 
     font-weight: 900; 
 }
@@ -364,12 +364,15 @@ form .campo input[readonly] {
 }
 .fa-minus,
 .fa-plus {
-    background-color: var(--azul);
     color: white;
 }
 .fa-minus:hover,
 .fa-plus:hover {
     cursor: pointer;
+}
+.contenedor-cantidad .fa-plus,
+.contenedor-cantidad .fa-minus  {
+    background-color: var(--azul);
 }
 .contenedor-cantidad input {
     flex: 1;
@@ -393,3 +396,21 @@ form .campo input[readonly] {
     width: 60rem;
 }
 
+.ficha-cliente {
+    background-color: var(--grisClaro);
+    padding: 1rem 4rem;
+}
+h3.resumen {
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--azul);
+}
+.total {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: right;
+    padding: 2rem;
+}
+.total span {
+    color: var(--azul);
+}
