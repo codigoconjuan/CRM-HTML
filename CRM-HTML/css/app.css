@@ -115,7 +115,7 @@ h2 {
         flex: 0 0 calc(25% - 1rem);
     }
     .col-9 {
-        flex: 0 0 calc(75% - 1rem);
+        flex: 1 0 calc(75% - 1rem);
     }
 }
 .barra {
@@ -125,6 +125,23 @@ h2 {
 .barra h1 {
     margin:0;
     color: white;
+}
+.contenido-barra {
+    text-align: center;
+}
+.contenido-barra button {
+    margin-top: 2rem;
+
+}
+@media (min-width: 768px) {
+    .contenido-barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenido-barra button {
+        margin: 0;
+    }
 }
 .contenido-principal{
     margin-top: 4rem;
@@ -419,4 +436,18 @@ h3.resumen-titulo {
 }
 .total span {
     color: var(--azul);
+}
+
+.login {
+    max-width: 520px;
+    margin: 15rem  auto 0 auto;
+    padding: 4rem 2rem;
+    background-color: var(--grisClaro);
+    border-radius: 1.5rem;
+}
+.login h2 {
+    text-align: center;
+}
+.login .contenedor-formulario {
+
 }
